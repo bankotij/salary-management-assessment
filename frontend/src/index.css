@@ -270,3 +270,114 @@ button[type="button"]:nth-of-type(2) {
   gap: 0.35rem;
   white-space: nowrap;
 }
+
+
+.app-tabs {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #d8dee9;
+}
+
+.app-tabs__tab {
+  margin-bottom: -1px;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #4b5563;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.app-tabs__tab:hover:not(:disabled) {
+  color: #1f3a5f;
+}
+
+.app-tabs__tab--active {
+  color: #1f3a5f;
+  border-bottom-color: #1f3a5f;
+  font-weight: 600;
+}
+
+.salary-insights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.insights-panel {
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+}
+
+.insights-panel h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.insights-panel__hint {
+  margin: 0 0 1rem;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.insights-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.insights-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: min(220px, 100%);
+}
+
+.insights-form__field span {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.insights-form__field input {
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #c5cde8;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.insights-form__field input:disabled {
+  background: #eef1f5;
+}
+
+.insights-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.insights-metric-card {
+  padding: 0.85rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.insights-metric-card__label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #4b5563;
+  font-size: 0.8rem;
+}
+
+.insights-metric-card__value {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a2332;
+}
