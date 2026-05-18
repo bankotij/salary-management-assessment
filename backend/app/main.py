@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app import models  # noqa: F401
 from app.api.employees import router as employees_router
+from app.api.insights import router as insights_router
 from app.core.config import settings
 from app.database import Base, engine
 
@@ -26,6 +27,7 @@ app.add_middleware(
 )
 
 app.include_router(employees_router)
+app.include_router(insights_router)
 
 
 @app.get("/health")

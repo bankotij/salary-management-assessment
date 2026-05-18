@@ -47,3 +47,20 @@ class EmployeeListResponse(BaseModel):
     total: int
     page: int
     page_size: int
+
+class CountrySalaryInsightsResponse(BaseModel):
+    country: str
+    employee_count: int
+    min_salary: int | None
+    max_salary: int | None
+    average_salary: float | None
+
+
+class JobTitleSalaryInsightsResponse(BaseModel):
+    country: str
+    job_title: str
+    employee_count: int
+    min_salary: int | None
+    max_salary: int | None
+    average_salary: float | None
+
