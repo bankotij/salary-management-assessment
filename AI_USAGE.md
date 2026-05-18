@@ -1,30 +1,11 @@
-# AI Usage Disclosure
+# AI Usage
 
-## Summary
+I used AI-assisted development tools during this assessment as a productivity aid.
 
-**Cursor and AI-assisted tooling were used to accelerate development** of this assessment submission. The author remained responsible for requirements interpretation, architectural choices, test validation, and final code review.
+The tools were used mainly for planning implementation steps, exploring test scenarios, generating small scaffolding ideas, and reviewing documentation structure. I treated AI output as a draft, not as final code.
 
-## How AI was used
+The core implementation decisions were reviewed and shaped manually, especially around the modular monolith structure, service/repository boundaries, SQL aggregate queries for salary insights, batching in the seed script, validation behavior, and the frontend interaction flow.
 
-- **Planning:** breaking the work into incremental commits (structure → tests → implementation → API → seed → frontend → docs)
-- **Test ideas:** suggesting edge cases for validation, pagination, insights with zero employees, and API error paths
-- **Scaffolding:** initial project layout, boilerplate for FastAPI layers, React components, and fetch-based API client
-- **Refactoring suggestions:** e.g. moving table creation out of route handlers, using SQL aggregates for insights, batching seed inserts
-- **Documentation:** drafts for README, design notes, tradeoffs, and demo script (reviewed and aligned to the actual codebase)
+Correctness was verified through the automated test suite and local builds. The backend currently has unit/API coverage for employee management, salary insights, and seed generation, and the frontend build was checked before submission.
 
-## How correctness was validated
-
-- **pytest** suite run repeatedly during backend work (currently 59 tests)
-- **Manual reasoning** about layer boundaries (API vs service vs repository)
-- **Frontend production build** (`npm run build`) for TypeScript correctness
-- **Local manual testing** of employee CRUD, filters, pagination, and insights tabs against a seeded database
-
-## What was not done
-
-- No blind copy-paste of large unrelated code blocks without reading and adapting them
-- No reliance on AI-generated commits as git author (commits attributed to the human author)
-- No substitution of tests with “it should work” assumptions — failing tests were fixed before moving on
-
-## Design intent
-
-Complexity was deliberately kept low: modular monolith, SQLite, simple React state, no microservices, no auth framework, no chart library. AI suggestions that increased scope without assessment value were declined or simplified.
+The intent was to use AI in the same way I would use any engineering accelerator: useful for speed, but not a replacement for design judgment, review, testing, or ownership.
