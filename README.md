@@ -162,8 +162,8 @@ Interactive details: `http://localhost:8000/docs`.
 - **Architecture & tradeoffs:** [DESIGN_NOTES.md](./DESIGN_NOTES.md), [TRADEOFFS.md](./TRADEOFFS.md)
 - **AI disclosure:** [AI_USAGE.md](./AI_USAGE.md)
 - **Demo checklist:** [DEMO_SCRIPT.md](./DEMO_SCRIPT.md)
+- **Deployment:** [DEPLOYMENT.md](./DEPLOYMENT.md)
 - **Tests:** backend behavior is specified with pytest (unit + API); frontend relies on TypeScript compile and manual/demo verification.
-- **Dependencies:** `react-router-dom` is listed in `frontend/package.json` but the app uses in-page tabs rather than URL routing, to keep the UI simple for this assessment.
 
 ## Related documents
 
@@ -171,3 +171,4 @@ Interactive details: `http://localhost:8000/docs`.
 - [TRADEOFFS.md](./TRADEOFFS.md) — explicit tradeoffs
 - [AI_USAGE.md](./AI_USAGE.md) — how AI tools were used
 - [DEMO_SCRIPT.md](./DEMO_SCRIPT.md) — short demo script for screen recording
+- [DEPLOYMENT.md](./DEPLOYMENT.md) — environment variables and deploy smoke tests
