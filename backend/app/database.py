@@ -16,10 +16,6 @@ class Base(DeclarativeBase):
     pass
 
 
-def ensure_tables(db: Session) -> None:
-    Base.metadata.create_all(bind=db.get_bind())
-
-
 def get_db() -> Generator[Session, None, None]:
     db = SessionLocal()
     try:
